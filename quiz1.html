@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        #colorButtons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .colorButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h1>Informasi Mahasiswa</h1>
+        <p>Nama: <span id="nama">Andi Ahmad Insan Kamil</span></p>
+        <p>Nomor Mahasiswa: <span id="nomor">12250113194</span></p>
+    </div>
+
+    <div id="colorButtons">
+        <div class="colorButtonContainer">
+            <img src="download.png" alt="Gambar 1" class="colorButtonImage">
+            <button class="colorButton" onclick="changeBackgroundColor('#ffcccc')">Warna 1</button>
+        </div>
+        <div class="colorButtonContainer">
+            <img src="images22.jpeg" alt="Gambar 2" class="colorButtonImage">
+            <button class="colorButton" onclick="changeBackgroundColor('#ccffcc')">Warna 2</button>
+        </div>
+        <div class="colorButtonContainer">
+            <img src="download2.jpeg" alt="Gambar 3" class="colorButtonImage">
+            <button class="colorButton" onclick="changeBackgroundColor('#ccccff')">Warna 3</button>
+        </div>
+    </div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+
+</body>
+</html>
